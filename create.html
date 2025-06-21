@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create - Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/create.css" />
+  </head>
+  <body>
+    <nav class="navigation-bar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Quiz App</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="study.html">Study</a>
+          <a href="create.html">Create</a>
+          <a href="analytics.html">Analytics</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="create-header">
+        <h1>Create Study Set</h1>
+      </div>
+
+      <div class="create-options">
+        <div class="option-card">
+          <h2>Manual Entry</h2>
+          <p>Create flashcards one by one</p>
+          <button class="button" id="manualEntryBtn">Start Creating</button>
+        </div>
+
+        <div class="option-card">
+          <h2>Text Input</h2>
+          <p>Paste or type your study set content</p>
+          <button class="button" id="textInputBtn">Start Creating</button>
+        </div>
+
+        <div class="option-card">
+          <h2>File Upload</h2>
+          <p>Upload a CSV or JSON file</p>
+          <button class="button" id="fileUploadBtn">Upload File</button>
+        </div>
+      </div>
+
+      <div class="modal" id="manualEntryModal">
+        <div class="modal-content">
+          <h2>Create Study Set</h2>
+          <form id="manualEntryForm">
+            <div class="form-group">
+              <label for="setName">Set Name</label>
+              <input type="text" id="setName" required />
+            </div>
+            <div id="cardsContainer">
+              <div class="card-entry">
+                <div class="form-group">
+                  <label>Question</label>
+                  <input type="text" class="question" required />
+                </div>
+                <div class="form-group">
+                  <label>Answer</label>
+                  <input type="text" class="answer" required />
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="button button-secondary"
+              id="addCardBtn"
+            >
+              Add Card
+            </button>
+            <div class="form-actions">
+              <button type="submit" class="button">Save Set</button>
+              <button
+                type="button"
+                class="button button-secondary"
+                id="cancelManualEntry"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="textInputModal">
+        <div class="modal-content">
+          <h2>Create Study Set from Text</h2>
+          <form id="textInputForm">
+            <div class="form-group">
+              <label for="textSetName">Set Name</label>
+              <input type="text" id="textSetName" required />
+            </div>
+            <div class="form-group">
+              <label for="textContent">Study Set Content</label>
+              <div class="text-format-info">
+                <p>Format your text as follows:</p>
+                <pre>
+Question 1
+Answer 1
+
+Question 2
+Answer 2
+
+Question 3
+Answer 3</pre
+                >
+              </div>
+              <textarea id="textContent" rows="10" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="button">Create Set</button>
+              <button
+                type="button"
+                class="button button-secondary"
+                id="cancelTextInput"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="fileUploadModal">
+        <div class="modal-content">
+          <h2>Upload Study Set</h2>
+          <form id="fileUploadForm">
+            <div class="form-group">
+              <label for="uploadSetName">Set Name</label>
+              <input type="text" id="uploadSetName" required />
+            </div>
+            <div class="form-group">
+              <label for="setFile">File (CSV or JSON)</label>
+              <input type="file" id="setFile" accept=".csv,.json" required />
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="button">Upload</button>
+              <button
+                type="button"
+                class="button button-secondary"
+                id="cancelFileUpload"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/create.js"></script>
+  </body>
+</html>

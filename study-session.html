@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Session - Quiz App</title>
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/study-session.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="nav-brand">Quiz App</div>
+      <div class="nav-links">
+        <a href="study.html">Study Sets</a>
+        <a href="create.html">Create</a>
+        <a href="analytics.html">Analytics</a>
+      </div>
+    </nav>
+
+    <main class="study-session">
+      <header class="session-header">
+        <h1 id="setTitle">Loading...</h1>
+        <div class="session-controls">
+          <select id="modeSelect" class="mode-select">
+            <option value="flashcards">Flashcards</option>
+            <option value="learn">Learn</option>
+            <option value="test">Test</option>
+          </select>
+          <div class="session-stats">
+            <div class="timer">
+              <span>Time:</span>
+              <span id="timerDisplay">0:00</span>
+            </div>
+            <div class="accuracy">
+              <span>Accuracy:</span>
+              <span id="accuracyDisplay">0%</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div id="progressBar" class="progress"></div>
+        </div>
+        <span id="progressText" class="progress-text">0 / 0</span>
+      </div>
+
+      <div id="flashcardContainer" class="study-mode active">
+        <div id="cardContainer" class="card-container">
+          <!-- Cards will be rendered here for Flashcard mode -->
+        </div>
+
+        <div class="card-controls">
+          <button id="previousButton" class="button">Previous</button>
+          <button id="flipButton" class="button">Flip Card</button>
+          <button id="nextButton" class="button">Next</button>
+        </div>
+      </div>
+
+      <div id="learnContainer" class="study-mode">
+        <!-- Content for Learn mode will be injected here -->
+      </div>
+
+      <div id="testContainer" class="study-mode">
+        <!-- Content for Test mode will be injected here -->
+      </div>
+
+      <div id="resultsContainer" class="study-mode">
+        <!-- Content for Test results will be injected here -->
+      </div>
+    </main>
+
+    <script src="js/study-session.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Computer Network: Ch1",
+    "description": "Computer Network: Ch1",
+    "cards": [
+      {
+        "question": "Laptops, smartphones, tablets, TVs, gaming consoles, Web cams, automobiles, environmental sensing devices, picture frames, and home electrical and security systems are all devices that fall under the category of what?",
+        "answer": "end systems (hosts)"
+      },
+      {
+        "question": "End systems are connected together by a network of _____________ _____ and ______ ________.",
+        "answer": "communication links and packet switches"
+      },
+      {
+        "question": "The speed of a link measured in bits/second. (R)",
+        "answer": "transmission rate"
+      },
+      {
+        "question": "packages of information",
+        "answer": "packets"
+      },
+      {
+        "question": "The two most prominent types of packet switches",
+        "answer": "routers and link-layer switches"
+      },
+      {
+        "question": "The sequence of communication links and packet switches traversed by a packet from the sending end system to the receiving end system",
+        "answer": "route (path)"
+      },
+      {
+        "question": "ISP the abbreviation for?",
+        "answer": "Internet Service Provider"
+      },
+      {
+        "question": "Types of ISPs",
+        "answer": "cable, DSL, high-speed lan, wifi, 56k dial up."
+      },
+      {
+        "question": "Two of the most important protocols in the internet (not UDP)",
+        "answer": "TCP and IP (TCP/IP)"
+      },
+      {
+        "question": "Two common internet standards",
+        "answer": "IETF and RFCs"
+      },
+      {
+        "question": "RFC is the abbreviation for",
+        "answer": "Request for comments"
+      },
+      {
+        "question": "IETF is the abbreviation for",
+        "answer": "Internet Engineering Task Force"
+      },
+      {
+        "question": "Multiple end systems that exchange data with each other",
+        "answer": "Distributed applications"
+      },
+      {
+        "question": "Specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination program running on another end system",
+        "answer": "Application Programming Interface (API)"
+      },
+      {
+        "question": "Defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and /or receipt of a message or other event.",
+        "answer": "Protocol"
+      },
+      {
+        "question": "What part of the internet are end systems found?",
+        "answer": "Network edge"
+      },
+      {
+        "question": "One of the two categories that hosts are divided into; PCs, smartphones, and other mobile devices",
+        "answer": "clients"
+      },
+      {
+        "question": "One of the two categories that hosts are divided into; powerful machines that store and distribute Web pages, stream video, relay e-mail...",
+        "answer": "servers"
+      },
+      {
+        "question": "The network that physically connects an end system to the first router (also known as the \"edge router\")",
+        "answer": "access networks"
+      },
+      {
+        "question": "DSL is the abbreviation for?",
+        "answer": "digital subscriber line"
+      },
+      {
+        "question": "Both fiber and coaxial cable are employed in this system, it is often referred to as",
+        "answer": "hybrid fiber coax (HFC)"
+      },
+      {
+        "question": "An up-and-coming technology that promises even higher speeds than DSL which provides a direct fiber optic connection to homes. (Verizon's FIOS)",
+        "answer": "fiber to the home (FTTH)"
+      },
+      {
+        "question": "the abbreviation CO stand for?",
+        "answer": "central office"
+      },
+      {
+        "question": "Two types of optical-distribution network architectures",
+        "answer": "active optical networks (AON) and passive optical networks (PON)"
+      },
+      {
+        "question": "component of FTTH internet access which directly connects to the home",
+        "answer": "optical network terminator (ONT)"
+      },
+      {
+        "question": "component of FTTH which connects the ONT to the CO",
+        "answer": "optical line terminator (OLT)"
+      },
+      {
+        "question": "Examples of this include twisted-pair copper wire, coaxial cable, multimode fiber-optic cable, terrestrial radio spectrum, and satellite radio spectrum.",
+        "answer": "physical medium"
+      },
+      {
+        "question": "Two categories of physical media; one uses the air and the other various forms of cable",
+        "answer": "guided media and unguided media"
+      },
+      {
+        "question": "Commonly used for computer networks within a building",
+        "answer": "Unshielded twisted pair (UTP)"
+      },
+      {
+        "question": "Two types of satellites used in communications",
+        "answer": "geostationary satellites and low-earth orbiting satellites (LEO)"
+      },
+      {
+        "question": "this small chunk of data travels through communication links and packet switches",
+        "answer": "packets"
+      },
+      {
+        "question": "The time to transmit the packet in seconds where L is the number of bits and R is the transmission rate",
+        "answer": "L/R"
+      },
+      {
+        "question": "Method in which a packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link.",
+        "answer": "store-and-forward transmission"
+      },
+      {
+        "question": "formula for end to end delay (d end-to end) where N is the number of links",
+        "answer": "N*L/R"
+      },
+      {
+        "question": "Packet switches have multiple links attached to them. For each attached link the packet switch has an ______ ______, which stores packets that the router is about to send into that link.",
+        "answer": "output buffer"
+      },
+      {
+        "question": "Variable delays that depend on the level of congestion in the network.",
+        "answer": "queuing delays"
+      },
+      {
+        "question": "This occurs when either a packet arriving or an already-queued packet is dropped.",
+        "answer": "packet loss"
+      },
+      {
+        "question": "Table that maps destination address to a routers outbound links",
+        "answer": "forwarding table"
+      },
+      {
+        "question": "The two fundamental approaches to moving data through a network of links and switches",
+        "answer": "circuit switching and packet switching"
+      },
+      {
+        "question": "Method to move data trhough a network of links and switches which reserves communication sessions between end systems",
+        "answer": "circuit-switching"
+      },
+      {
+        "question": "Two types of implementations of circuit-swithing",
+        "answer": "frequency-division multiplexing (FDM) and time-division multiplexing (TDM)"
+      },
+      {
+        "question": "reserves space for communication systems by time",
+        "answer": "time-division multiplexing (TDM)"
+      },
+      {
+        "question": "reserves space for communication by partitioning the physical media into frequencies",
+        "answer": "frequency-division multiplexing (FDM)"
+      },
+      {
+        "question": "the width of the band in FDM",
+        "answer": "bandwidth"
+      },
+      {
+        "question": "In the network of networks an an access ISP is said to be the ________ and the global transit ISP is said to be the ________",
+        "answer": "customer and provider"
+      },
+      {
+        "question": "The top level ISP is known as a",
+        "answer": "tier-1 ISP"
+      },
+      {
+        "question": "The ISP which connects to a tier-1 ISP is known as a",
+        "answer": "regional ISP"
+      },
+      {
+        "question": "typically a stand-alone building with its own switches, which is a meeting point where multiple ISPs can peer together",
+        "answer": "Internet Exchange Point (IXP)"
+      },
+      {
+        "question": "Different types of delays a packet may suffer collectively known as the total nodal delay",
+        "answer": "processing delay, queuing delay, transmission delay, and propagation delay."
+      },
+      {
+        "question": "The time required to examine the packet's header and determine where to direct the packet",
+        "answer": "processing delay"
+      },
+      {
+        "question": "packets experience this as it waits to be transmitted onto the link",
+        "answer": "queuing delay"
+      },
+      {
+        "question": "the amount of time required to push all of the packet's bits into the link (L/R)",
+        "answer": "transmission delay"
+      },
+      {
+        "question": "the time required to propagate from the beginning of the link to router B",
+        "answer": "propagation delay"
+      },
+      {
+        "question": "formula for d nodal",
+        "answer": "d proc + d queue + d trans + d prop"
+      },
+      {
+        "question": "formula for d end-end (the end to end delay)",
+        "answer": "N(d proc + d trans + d prop)"
+      },
+      {
+        "question": "When transferring a large file from Host A to Host B across a computer network, this is the rate at which Host B is receiving the file at any instant of time",
+        "answer": "instantaneous througput"
+      },
+      {
+        "question": "When transferring a large file from Host A to Host B across a computer network, if the file consists of F bits and the transfer takes T seconds for Host B to receive all F bits this rate takes F/T bits/sec",
+        "answer": "average throughput"
+      },
+      {
+        "question": "A link in a network which slows the throughput down",
+        "answer": "bottleneck link"
+      },
+      {
+        "question": "The five layers of the internet protocol stack",
+        "answer": "Application, Transport, Network, Link, and Physical"
+      },
+      {
+        "question": "The seven layers of the OSI model",
+        "answer": "Application, Presentation, Session, Transport, Network, Link, Pysical"
+      },
+      {
+        "question": "data in the application layer is known as a",
+        "answer": "message"
+      },
+      {
+        "question": "data in the transport layer is known as a",
+        "answer": "segment"
+      },
+      {
+        "question": "data in the network layer is known as a",
+        "answer": "datagram"
+      },
+      {
+        "question": "data in the link layer is known as a",
+        "answer": "frame"
+      }
+    ],
+    "createdAt": "2025-06-12T18:12:54.289Z",
+    "id": 1749751974316
+  }
+]

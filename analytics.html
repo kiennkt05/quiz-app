@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics - Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/analytics.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navigation-bar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Quiz App</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="study.html">Study</a>
+          <a href="create.html">Create</a>
+          <a href="analytics.html">Analytics</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="analytics-header">
+        <h1>Learning Analytics</h1>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="analytics-card">
+          <h2>Study Sessions</h2>
+          <canvas id="sessionsChart"></canvas>
+        </div>
+
+        <div class="analytics-card">
+          <h2>Card Performance</h2>
+          <canvas id="performanceChart"></canvas>
+        </div>
+
+        <div class="analytics-card">
+          <h2>Study Time</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3>Total Time</h3>
+              <p id="totalTime">0 minutes</p>
+            </div>
+            <div class="stat-item">
+              <h3>Average Time</h3>
+              <p id="averageTime">0 minutes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-card">
+          <h2>Study Sets Overview</h2>
+          <div class="sets-list" id="setsList">
+            <!-- Study sets will be listed here -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/analytics.js"></script>
+  </body>
+</html>

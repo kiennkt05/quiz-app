@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study - Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/study.css" />
+  </head>
+  <body>
+    <nav class="navigation-bar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Quiz App</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="study.html">Study</a>
+          <a href="create.html">Create</a>
+          <a href="analytics.html">Analytics</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="study-header">
+        <h1>Study Sets</h1>
+        <div class="header-actions">
+          <button class="button" id="uploadSetBtn">Upload Study Set</button>
+          <div class="data-management">
+            <button class="button button-secondary" id="exportDataBtn">
+              Export Data
+            </button>
+            <button class="button button-secondary" id="importDataBtn">
+              Import Data
+            </button>
+            <button class="button button-danger" id="clearDataBtn">
+              Clear All Data
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="study-sets-grid" id="studySetsContainer">
+        <!-- Study sets will be dynamically added here -->
+      </div>
+
+      <div class="modal" id="uploadModal">
+        <div class="modal-content">
+          <h2>Upload Study Set</h2>
+          <form id="uploadForm">
+            <div class="form-group">
+              <label for="setName">Set Name</label>
+              <input type="text" id="setName" required />
+            </div>
+            <div class="form-group">
+              <label for="setFile">File (CSV or JSON)</label>
+              <input type="file" id="setFile" accept=".csv,.json" required />
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="button">Upload</button>
+              <button
+                type="button"
+                class="button button-secondary"
+                id="cancelUpload"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="importModal">
+        <div class="modal-content">
+          <h2>Import Data</h2>
+          <form id="importForm">
+            <div class="form-group">
+              <label for="importFile">Select JSON File</label>
+              <input type="file" id="importFile" accept=".json" required />
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="button">Import</button>
+              <button
+                type="button"
+                class="button button-secondary"
+                id="cancelImport"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/storage-utils.js"></script>
+    <script src="js/study.js"></script>
+  </body>
+</html>
